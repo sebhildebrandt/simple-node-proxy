@@ -17,5 +17,3 @@ script in js
 ```
 
 [LINK](https://domain.com/link/to/file)
-
-
