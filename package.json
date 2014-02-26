@@ -1,0 +1,15 @@
+{
+  "name": "simple-node-proxy",
+  "description": "Simple Node Proxy",
+  "author": "Sebastian Hildebrandt <hildebrandt@plus-innovations.com>",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node proxy"
+  },
+  "dependencies": {
+    "http-proxy": "latest"
+  }
+}
+
+
