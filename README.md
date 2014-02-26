@@ -8,7 +8,6 @@ Simple Web-Proxy created with node.js - Version 0.0.1 - (MIT-license)
 
 * **simple proxy**: routing from one IP:port to another IP:port)
 * **multiple websites**: make several node apps running under different ports available on one single ingoing IP-address (and port 80 and/or 443)
-* **load balancing**: implementing a basic round robin balancer
 
 ## Motivations
 
@@ -32,7 +31,7 @@ The configuration is pretty simple. Just edit the `config.json`
 
 Imagine, you have have the following domains pointing to your server, which has only one IP address:
 
-* test1.loacl
+* test1.local
 * test2.local
 
 (I modified /etc/hosts to be able to use those domain names)
@@ -66,7 +65,7 @@ The first one (test1.loacl) should be served by your first node-app - lets say, 
 }
 ```
 
-You can set up as many proxies as you like. 
+In the first section, you find the settings for the proxy-server itself. Which port does it listen to (here for demo purposes on a local machine it is port 8080 and 8081 for https - ssl), and its default ssl credentials. After that, the proxy-section starts. You can set up as many proxies as you like, having the domain name as a key for the speific settings. Maybe (to make some first tests), start with having SSL turned off in the config file. If this works, add the SSL settings.
 
 ### Starting the server
 
